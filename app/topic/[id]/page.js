@@ -17,8 +17,8 @@ export default function TopicPage({params}) {
 
   return (
     <div>
-      <h1>{topic.title}</h1>
-      <VideoSection showVideo={true} />
+      <h1 className="mb-3 text-2xl font-semibold">{topic.title}</h1>
+      <VideoSection showVideo={true} videoCode={topic.videoCode} />
       <QuestionSection />
       <AssignmentSection assignmentDescription={topic.assignmentDescription} />
     </div>

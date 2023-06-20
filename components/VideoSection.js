@@ -1,4 +1,4 @@
-export default function VideoSection({ showVideo }) {
+export default function VideoSection({ showVideo,videoCode }) {
   return (
     <div>
       {showVideo ? (
@@ -6,7 +6,7 @@ export default function VideoSection({ showVideo }) {
         <div className="w-full p-4">
           <iframe
             className="w-1/2 md:h-96"
-            src="https://www.youtube.com/embed/ZByhs9mDtDg"
+            src={`https://www.youtube.com/embed/${videoCode}`}
             title="Embedded Video"
             frameBorder="0"
             allowFullScreen
